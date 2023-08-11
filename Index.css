@@ -1,0 +1,112 @@
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #686e9b; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  .Navbar{
+    /* background-color: #797da0; */
+    background-color: #8990c3;
+  }
+
+  .conteneur3D {
+    height : 450px;
+    width : 300px;
+    margin : 70px auto 0 auto;
+    -webkit-perspective : 600px;
+    -moz-perspective : 600px;
+    perspective : 600px;
+    }
+
+    #grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    }
+   
+    
+    .conteneur3D .carte {
+    height : 450px;
+    width : 300px;
+    -webkit-transform-origin : 50% 50% 30px;
+    -webkit-transform : rotateY(0);
+    -webkit-transform-style : preserve-3d;
+    -webkit-transition : all 1s ease;
+    -moz-transform-origin : 50% 50% 30px;
+    -moz-transform : rotateY(0);
+    -moz-transform-style : preserve-3d;
+    -moz-transition : all 1s ease;
+      transform-origin : 50% 50% 30px;
+      transform : rotateY(0);
+      transform-style : preserve-3d;
+      transition : all 1s ease;
+    /* OMBRE */
+    -webkit-box-shadow : 0 0 15px #333;
+    -moz-box-shadow : 0 0 15px #333;
+      box-shadow : 0 0 15px #333;
+    }
+
+    
+    .conteneur3D:hover .carte {
+    -webkit-transform : rotateY(180deg);
+    -moz-transform : rotateY(180deg);
+    transform : rotateY(180deg);
+    cursor : pointer;
+    }
+    
+    .carte div {
+    position : absolute;
+    height : 450px;
+    width : 300px;
+    background-color : #686e9b;
+    -webkit-backface-visibility : hidden;
+    -moz-backface-visibility : hidden;
+    backface-visibility : hidden;
+    }
+    
+    .carte div h1 {
+    margin : 0;
+    padding-top : 120px;
+    }
+    
+    .carte div:first-child {
+    -webkit-transform : rotateY(180deg);
+    -moz-transform : rotateY(180deg);
+    transform : rotateY(180deg);
+    }
+
+    .titre{
+        text-align: center;
+    }
+
+    img{
+        width: 300px;
+        height: 450px;
+    }
+
+    footer{
+        background-color: #686e9b;
+        margin-top: 180px;
+    }
+
+    .logo{
+        width: 220px;
+        height: 270px;
+    }
+
